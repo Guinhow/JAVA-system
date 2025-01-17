@@ -21,10 +21,7 @@ public class Amostra {
     private String sample;
     private Double peso;
     private Double temperatura;
-
     private String obs;
-    // private String classificacao;
-
 
     public Long getId() {
         return id;
@@ -73,14 +70,6 @@ public class Amostra {
     public void setTemperatura(Double temperatura) {
         this.temperatura = temperatura;
     }
-
-    // public String getClassificacao() {
-    //     return classificacao;
-    // }
-
-    // public void setClassificacao(String classificacao) {
-    //     this.classificacao = classificacao;
-    // }
 
     public String getObs() {
         return obs;

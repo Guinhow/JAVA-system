@@ -31,10 +31,7 @@ public class AmostraController {
         return "redirect:/";
     }
 
-    // @GetMapping("/filtroAmostra")
-    // public String filtroAmostra() {
-    //     return "filtroAmostra"; 
-    // }
+
     @GetMapping("/filtroAmostra")
     public String mostrarFormulario() {
         return "filtroAmostra";

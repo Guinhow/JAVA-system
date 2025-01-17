@@ -12,13 +12,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AmostraRepository extends JpaRepository<Amostra, Long> {
-//     List<Amostra> findByCodigoBqAndClienteAndAmostraAndDataEntrada(
-//         Integer codigoBq,
-//         String cliente,
-//         String amostra,
-//         String dataEntrada
-//     );
-
 @Query("SELECT a FROM Amostra a WHERE " +
        "(:codigoBq IS NULL OR a.codigoBq = :codigoBq) AND " +
        "(:cliente IS NULL OR a.cliente LIKE %:cliente%) AND " +
